@@ -1,0 +1,5 @@
+<launch>
+  <arg name="n" value = "robot0" /> 
+  <arg name="t" default = "des_vel" />
+  <node name="stdr_walls" pkg="stdr_walls" type="stdr_walls_node" ns="$(arg n)" />
+</launch>
