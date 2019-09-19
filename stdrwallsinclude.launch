@@ -1,5 +1,7 @@
 <launch>
-  <node name="stdr_walls_node" pkg="stdr_walls" type="stdr_walls">
-    <arg name="n" default = "des_vel" /> 
+  <arg name="n" default="des_vel" />
+  <arg name="ns" default="robot0" />
+  <node name="stdr_walls_node" pkg="stdr_walls" type="stdr_walls_node" args="-n $(arg n)" output="screen">
+    <env name="ROS_NAMESPACE" value="$(arg ns)" />
   </node>
 </launch>

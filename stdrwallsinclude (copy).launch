@@ -1,5 +1,0 @@
-<launch>
-  <node name="stdr_walls_node" pkg="stdr_walls" type="stdr_walls">
-    <arg name="n" default = "des_vel" /> 
-  </node>
-</launch>
